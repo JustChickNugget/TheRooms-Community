@@ -8,7 +8,7 @@ body:
       label: Checklist
       description: Before reporting a bug, please make sure you have completed the following steps.
       options:
-        - label: I have checked that this bug is not mentioned in the `KNOWN_BUGS.md`
+        - label: I have checked that this bug is not mentioned in the `KNOWN_ISSUES.md`
           required: true
         - label: I have checked that this bug is not already reported
           required: true
