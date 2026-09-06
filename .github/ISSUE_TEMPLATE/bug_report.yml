@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a bug you've found
+labels: ["bug"]
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Before reporting a bug, please make sure you have completed the following steps.
+      options:
+        - label: I have checked that this bug is not mentioned in the `KNOWN_BUGS.md`
+          required: true
+        - label: I have checked that this bug is not already reported
+          required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Game version
+      description: What game version are you playing?
+      placeholder: ex. 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: What operating system are you launching the game on?
+      options:
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Reproduction steps
+      description: Describe steps to reproduce the bug.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-and-actually-happened
+    attributes:
+      label: What did you expect and what actually happened?
+      description: What did you expect while performing those actions and what actually happened?
+    validations:
+      required: true
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Upload screenshots
+      description: Add screenshots to help explain your problem if needed.
+    validations:
+      required: false
+  - type: checkboxes
+    id: credit-consent
+    attributes:
+      label: Credit consent
+      options:
+        - label: Allow mention in changelogs
+          required: false
