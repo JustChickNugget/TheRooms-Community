@@ -1,4 +1,4 @@
-# Feedback, suggestions and bug reporting.
+# Feedback, suggestions and bug reporting
 
 By submitting feedback, suggestions, or bug reports, you agree that:
 
