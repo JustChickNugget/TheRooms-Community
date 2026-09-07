@@ -47,6 +47,13 @@ body:
       description: What did you expect while performing those actions and what actually happened?
     validations:
       required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional information
+      description: If necessary, add additional information (for example, PC specifications, etc.).
+    validations:
+      required: false
   - type: upload
     id: screenshots
     attributes:
